@@ -8,7 +8,7 @@ RUN source /opt/ros/jazzy/setup.bash
 
 WORKDIR /ros2_ws
 
-COPY ./simple_publisher_pkg /ros2_ws/src/simple_publisher_pkg
+COPY . /ros2_ws/src/simple_publisher_pkg
 
 RUN colcon build --symlink-install
 
