@@ -11,6 +11,6 @@ jobs:
       - name: Build and push the image
         run: |
           docker login --username rohitthampy --password ${{secrets.GH_PAT}} ghcr.io
-          docker build . --tag ghcr.io/rohitthampy/ros2_simple_publihser_pkg:latest
-          docker push ghcr.io/rohitthampy/ros2_simple_publihser_pkg:latest
+          docker build . --tag ghcr.io/rohitthampy/ros2_simple_publisher_pkg:latest
+          docker push ghcr.io/rohitthampy/ros2_simple_publisher_pkg:latest
           
